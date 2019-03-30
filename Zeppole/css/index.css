@@ -1,0 +1,151 @@
+/* colors from original website */
+/* 
+#ffc963
+#ba002a
+#00a54d
+#00688f 
+#a82e2f 
+*/
+
+/* html, body */
+html,
+body { 
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth; 
+}
+ 
+/* html, body  - end */
+ 
+
+
+.intro {
+  background: white;
+    text-align: center; 
+    margin: 0 auto; 
+    padding: 15px;
+}
+
+.paragraph {
+  color:black;
+  color:black!important;  
+    font-family: 'Geometric_415 W01 Black','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
+    font-style: normal;
+    color: #24201e;
+}
+
+.bg_firebrick {
+    background: #a80532;
+}
+
+ 
+.navbar-container {  
+    text-align: center;
+    width: 90%;
+    margin: 0 auto; 
+    padding: 15px 0 0 0;
+  z-index:1;
+}
+
+ .myNavbar { 
+    text-align: center!important;  
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 2px;
+    
+}
+
+
+.myNavbar > .navbar-collapse > ul {  
+    margin: 0 auto!important;     
+}
+
+.myNavbar > li > a {
+    color:black!important;  
+    font-family: 'Geometric_415 W01 Black','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
+    font-style: normal;
+    color: #24201e;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .15625rem;
+    transition: all .4s ease-in-out 0s;
+    /* font-weight: 600; */
+}
+
+ 
+.main-content {
+    width:100%;
+    height:100%;
+
+    
+  }
+ 
+.container-logo {
+  text-align: center;
+  margin: 0 auto; 
+}
+#img-logo {
+  height:90px;
+  width:210px; 
+}
+
+.slideshow { 
+    position: relative; 
+    width: 100%; 
+    height:300px;
+    margin: 0 auto; 
+    background:white;
+    display: block;
+}
+
+.slideshow-img {
+    width:100%;
+    height: 300px;
+    animation:fading 10s infinite;
+}
+@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.container-navbarlinks {
+  text-align: center;
+}
+
+.container-navbarlinks > ul {
+  
+}
+
+.container-navbarlinks > ul > li {
+  color:black;
+  list-style: none;
+  display:inline-block;
+  padding:5px 10px 5px 10px;
+}
+
+  .stripe-1 {
+  color: white;  
+    background:
+linear-gradient(135deg, #a82e2f 25%, transparent 25%) -50px 0,
+linear-gradient(225deg, #a82e2f 25%, transparent 25%) -50px 0,
+linear-gradient(315deg, #a82e2f 25%, transparent 25%),
+linear-gradient(45deg, #a82e2f 25%, transparent 25%);
+background-size: 100px 100px;
+background-color: #fdc858; 
+} 
+ 
+#announcement {
+    padding: 5px;
+    margin: 0; 
+    background: #fdc858;  
+    width: 100%; 
+ z-index: 9999;
+  text-align: center;
+  box-shadow: 0px 2px 5px black;
+  display:block; 
+}
+
+
+
+#message {color: #000; font-size: 1em; float: left; padding: 0 2.1% 0 2.1%;}
+#close {position: fixed; top: 0; right: 0; padding: 0 2.1% 0 2.1%;}
+.fa-times {color: red;}
+#delimiter { clear: both; }
