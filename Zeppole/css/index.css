@@ -10,142 +10,400 @@
 /* html, body */
 html,
 body { 
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth; 
+  min-width: 100%!important;
+  min-height: 100%;
+  padding: 0;
+  margin: 0; 
 }
- 
-/* html, body  - end */
- 
 
+/* html, body  - end */
+
+ 
 
 .intro {
   background: white;
-    text-align: center; 
-    margin: 0 auto; 
-    padding: 15px;
+  background-image: url("../img/bg_paper.png");
+  text-align: center;
+  margin: 0 auto; 
+  padding: 25px 15px 15px 15px;
 }
 
-.paragraph {
-  color:black;
-  color:black!important;  
-    font-family: 'Geometric_415 W01 Black','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
-    font-style: normal;
-    color: #24201e;
+.paragraph { 
+  color: black !important;
+  font-family: 'Geometric_415 W01 Black', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  font-style: normal;
+  color: #24201e;
+
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1rem;
 }
 
 .bg_firebrick {
-    background: #a80532;
+  background: #a80532;
 }
 
+.header-label {
+  width: 10.25rem;
+  min-height: 6.375rem;
+  position: absolute;
+  padding: 0;
+  z-index: 1;
+  background-image: url("../img/banner.png");
+  background-size: 100% 100%;
+}
+
+.left {
+  left: 2.5rem;
+}
+
+.right {
+  right: 1.875rem;
+}
  
-.navbar-container {  
-    text-align: center;
-    width: 90%;
-    margin: 0 auto; 
-    padding: 15px 0 0 0;
-  z-index:1;
-}
 
- .myNavbar { 
-    text-align: center!important;  
-    padding: 0;
-    margin: 0 auto;
-    border-radius: 2px;
-    
-}
-
-
-.myNavbar > .navbar-collapse > ul {  
-    margin: 0 auto!important;     
-}
-
-.myNavbar > li > a {
-    color:black!important;  
-    font-family: 'Geometric_415 W01 Black','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
-    font-style: normal;
-    color: #24201e;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: .15625rem;
-    transition: all .4s ease-in-out 0s;
-    /* font-weight: 600; */
-}
-
- 
-.main-content {
-    width:100%;
-    height:100%;
-
-    
-  }
- 
-.container-logo {
+.banner-menu {
+  list-style: none;
+  display: block;
+  width: 14.25rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  padding: 0;
+  margin: 0 auto;
   text-align: center;
-  margin: 0 auto; 
-}
-#img-logo {
-  height:90px;
-  width:210px; 
+  display: block;
 }
 
-.slideshow { 
-    position: relative; 
-    width: 100%; 
-    height:300px;
-    margin: 0 auto; 
-    background:white;
-    display: block;
+.banner-menu>li {
+  display: inline-block;
+  padding: 5px;
 }
 
-.slideshow-img {
-    width:100%;
-    height: 300px;
-    animation:fading 10s infinite;
+.icon {
+  font-size: 36px;
+  color: black;
 }
-@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-.container-navbarlinks {
+
+.icon:hover {
+  color: #a80532;
+}
+ 
+.navbar-container {
   text-align: center;
-}
-
-.container-navbarlinks > ul {
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 0 0 0;
+  z-index: 1;
   
 }
 
-.container-navbarlinks > ul > li {
-  color:black;
-  list-style: none;
-  display:inline-block;
-  padding:5px 10px 5px 10px;
+.navbar-nav {
+  margin: 0 auto;
+  text-align: center;
 }
 
-  .stripe-1 {
-  color: white;  
-    background:
-linear-gradient(135deg, #a82e2f 25%, transparent 25%) -50px 0,
-linear-gradient(225deg, #a82e2f 25%, transparent 25%) -50px 0,
-linear-gradient(315deg, #a82e2f 25%, transparent 25%),
-linear-gradient(45deg, #a82e2f 25%, transparent 25%);
-background-size: 100px 100px;
-background-color: #fdc858; 
-} 
+.myNavbar {
+  text-align: center !important;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 2px; 
+  overflow:auto;
+  
+}
+  
+.myNavbar>li>a {
+  color: black !important;
+  font-family: 'Geometric_415 W01 Black', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  font-style: normal;
+  color: #24201e;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .15625rem;
+  transition: all .4s ease-in-out 0s;
+  /* font-weight: 600; */
+  
+}
+
+
+.main-content {
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.container-logo {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#img-logo {
+  height: 90px;
+  width: 210px;
+}
+
+
+
+.locations {
+  background: white;
+  background-image: url("../img/bg_paper.png");
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px; 
+  position:relative;
+  z-index:0;
+}
  
-#announcement {
-    padding: 5px;
-    margin: 0; 
-    background: #fdc858;  
-    width: 100%; 
- z-index: 9999;
+.myCard{
+  text-align:center; 
+  color:black; 
+  font-weight:bold;
+  font-size:24px;
+  letter-spacing:3px; 
+  border: none!important;
+  border-radius: 0px!important;
+  overflow:hidden; 
+  box-shadow: 5px 10px 18px #888888;  
+  height: 271px;
+}
+
+.cardImage{
+  width: 100%;
+  height:260px; 
+}
+
+.cardBackgroundImage{  
+  background-size: cover;
+  transition: all 2s ease;
+}
+ 
+.cardBackgroundImage:hover{
+  transform: scale(1.1);
+}
+
+.myCardTitle {
+  line-height: 260px;
+  text-shadow: 2px 2px #000000;
+  white-space: nowrap;
+  position: relative;
+  pointer-events: none;
+  user-select: none;
+  animation: fade 0.5s;
+}
+ 
+ 
+.myCardText {
+  font-size: 16px;
+  pointer-events: none; 
+  text-shadow: 2px 2px #000000;
+  white-space: nowrap;
+  position: relative;
+  top: 40%;
+  user-select: none;
+  animation: fade 0.5s;
+}
+
+.partnersText {
+  top: 20%;
+  font-size: 14px;
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+.awards {
+  background: white;
+  background-image: url("../img/bg_paper.png");
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px;
+  position:relative;
+  z-index:-2;
+}
+
+.awards>h2 {
+  color: #000000;
+}
+
+#myCarousel {}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  background: white;
+  display: block;
+}
+
+.slideshow-img {
+  display: block;
+  max-width: 100%;
+  line-height: 1;
+  margin: auto;
+  width: 100%;
+}
+
+.container-navbarlinks>ul {}
+
+.container-navbarlinks>ul>li {
+  color: black;
+  list-style: none;
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+}
+
+.bg_stripe {
+  background-image: url("../img/bg_stripe.png");
+}
+
+.bg_triangle {
+  background-image: url("../img/bg_triangle.png");
+}
+
+
+.announcement {
+  padding: 5px;
+  margin: 0;
+  background: black;
+  width: 100%;
+  z-index: 9999;
   text-align: center;
   box-shadow: 0px 2px 5px black;
-  display:block; 
+  display: block;
+}
+
+.message {
+  color: white;
+  font-size: 1em;
+  padding: 0 2.1% 0 2.1%;
+  margin: 0 auto; 
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.close { 
+  padding: 0 2.1% 0 2.1%; 
+  width: 10%;
+  float: left;
+  display: none;
+} 
+
+.fa-times {
+  color: white;
+}
+
+.delimiter {
+  clear: both;
 }
 
 
 
-#message {color: #000; font-size: 1em; float: left; padding: 0 2.1% 0 2.1%;}
-#close {position: fixed; top: 0; right: 0; padding: 0 2.1% 0 2.1%;}
-.fa-times {color: red;}
-#delimiter { clear: both; }
+footer {
+  text-align: center;
+  margin: 0;
+  bottom: 0;
+  height: 100px; 
+}
+
+.footer-content {
+  width: 90%;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.footer-item { 
+    line-height: 30px;
+    padding: 0px; 
+}
+
+
+.footer-socialmedia {
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+} 
+
+.footer-socialmedia>li {
+  display: inline-block;
+  padding: 5px;
+}
+
+@media screen and (max-width: 650px) {
+  .hideWhenOnMobile { 
+    display: none;
+    visibility: hidden;
+  } 
+}
+
+
+
+
+/* Thanks to Chris Coyier https://css-tricks.com/snippets/css/ribbon/ */ 
+ 
+.ribbon {
+  font-size: 16px !important;
+  width: 90%;
+  position: relative;
+  background: #fdc858;
+  color: black;
+  text-align: center;
+  padding: 1em 2em; /* Adjust to suit */
+  margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+  white-space: nowrap;
+ }
+ .ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #E3B44F;
+  z-index: -1;
+ }
+ .ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+ }
+ .ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+ }
+ .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #CAA046 transparent transparent transparent;
+  bottom: -1em;
+  
+ }
+ .ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+ }
+ .ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+ }

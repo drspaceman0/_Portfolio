@@ -2,189 +2,204 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta id="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zeppole Baking Company</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <!-- <link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'> -->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Serif+Caption" />
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" /> 
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Serif+Caption" /> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
         integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous">
     </script>
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/main.js"></script>
 </head>
 
-<body class="stripe-1">
-    <div id="announcement">
-        <span id='message'>asdasd</span>
-        <span id='close'><a href="#" title="Close"><i class='fa fa-times'></i></a></span>
-        <div id="delimiter"></div>
-    </div>
+<body>
     <header>
-        <div class="row column">
-                <div class="logo-container bg_firebrick" style="width: 100%; text-align: center;">
-                        <img src="../img/logo_edit.png">
-                    </div>
+        <div id="myAnnouncement" class="announcement">
+            <span class="message" id="message"></span>
+            <span class="close" id="close"><a href="#" title="Close" style=""><i class="fa fa-times"></i></a></span>
+            <div class="delimiter"></div>
         </div>
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg_firebrick myNavbar"> 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="bannerRow">
+            <div class="header-label left hideWhenOnMobile">
+                <ul class="banner-menu">
+                    <li class="facebook">
+                        <a href="#" target="blank">
+                            <i class="fab fa-facebook icon" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="email">
+                        <a href="#" target="blank">
+                            <i class="far fa-envelope icon" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="phone">
+                        <a href="#" target="blank">
+                            <i class="fas fa-phone icon" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-label right hideWhenOnMobile">
+                <div class="banner-menu">
+                    <span id="cafeHours" style="font-size: 12px;color:black;">Apple Street Café<br />Mon-Sat
+                        6am-6pm<br />Sun 8-4pm</span>
+                </div>
+            </div>
+            <div class="logo-container bg_firebrick" style="width: 100%; text-align: center;">
+                <img src="../zeppole/img/logo_edit.png">
+            </div>
+        </div>
+        <div class="bg_stripe" style="height:100px"> </div>
+
+       
+    </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg_firebrick myNavbar " data-spy="affix">
+            <button class="navbar-toggler ml-auto" type="button"  data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav" style="">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Locations</a>
+                        <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Accolades</a>
+                        <a class="nav-link" href="#">Catering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </nav>
-    </header>
+    
 
-    <div id="carouselExampleControls" class="carousel slide container" data-ride="carousel">
-        <div class="carousel-inner">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="overflow:hidden;">
+        <div class="carousel-inner" style="overflow:hidden;">
             <div class="carousel-item active">
-                <img src="https://images.pexels.com/photos/209291/pexels-photo-209291.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    class="d-block w-100" alt="...">
+                <img class="d-block w-100" src="../zeppole/img/sl_breadrow1.jpg" style=" height:560px" alt="First Slide">
             </div>
             <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/2434/bread-food-healthy-breakfast.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    class="d-block w-100" alt="...">
+                <img class="d-block w-100" src="../zeppole/img/sl_bunny.jpg" style=" height:560px" alt="Second Slide">
             </div>
             <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/2436/bread-food-healthy-breakfast.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    class="d-block w-100" alt="...">
+                <img class="d-block w-100" src="../zeppole/img/sl_breadrow2.jpg" style=" height:560px" alt="Third Slide">
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
     <div class="intro">
-        <p class="paragraph"> Author Henry Miller once wrote, "You can travel fifty thousand miles in America
-            without tasting a piece of good bread." </p>
+        <div class="container">
 
-        <p class="paragraph">It's a shame he never got to Zeppole Baking Co., Boise's premier artisan bakery.</p>
-
-        <p class="paragraph">At Zeppole, we believe in bread with character, bread that makes each meal or snack a
-            pleasurable, satisfying experience. We know that, by adding a loaf of extraordinary bread, even the
-            simplest fare can be turned into a memorable feast. Creating delectable hand–crafted artisan breads is
-            our joy and our passion, which might be one of the reasons why Boise Weekly calls Zeppole breads "near
-            legendary." At this website, you'll learn more about our artisan breads and other baked goods, meet the
-            Alpers family, check out the menu for our cafés, find out where you can buy our products, and see what
-            others have to say about Zeppole. We invite you to contact us with any suggestions, questions, or
-            comments you might have. Idaho Preferred Logo</p>
-
-        <p class="paragraph">Boise's Best Local Bakery - Boise Weekly's "Best of Boise" Reader's Poll - 2010, 2011 &
-            2013, 2014, 2015, 2016, 2017 & 2018</p>
-
-        <p class="paragraph">Best Bakery - Idaho Statesman's "Best of the Treasure Valley" 2011, 2013 & 2017</p>
-
-        <p class="paragraph">Small Business of the Year - Boise Metro Chamber of Commerce - 2010</p>
-
-        <p class="paragraph">2018 marked Zeppole's 25th year of serving the Treasure Valley with hand-made artisan
-            baked goods. We sincerely appreciate your business!</p>
-
+            <h2>25 Years of Bringing Bread to Boise</h2>
+            <p class="paragraph">At Zeppole, we believe in bread with character, bread that makes each meal or snack a
+                pleasurable, satisfying experience. We know that, by adding a loaf of extraordinary bread, even the
+                simplest fare can be turned into a memorable feast. Creating delectable hand–crafted artisan breads is
+                our joy and our passion, which might be one of the reasons why Boise Weekly calls Zeppole breads "near
+                legendary." At this website, you'll learn more about our artisan breads and other baked goods, meet the
+                Alpers family, check out the menu for our cafés, find out where you can buy our products, and see what
+                others have to say about Zeppole. We invite you to contact us with any suggestions, questions, or
+                comments you might have. </p>
+        </div>
+    </div>
+    <div class="locations">
+        <h2 class="ribbon">
+            <strong class="ribbon-content">Where to Find Us</strong>
+        </h2>
         <div class="card-deck">
-            <div class="card bg-dark text-white"
-                style="text-align:center; color:black; font-weight:bold;font-size:24px;letter-spacing:3px;">
-                <img src="../img/bg_bread1.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay" style="text-align:center;">
-                    <p style="line-height: 180px;" class="card-title">Parkcenter</p>
-                </div>
+            <div class="card text-white myCard">
+                <div class="card-img-overlay cardBackgroundImage" style="background-image:url('../zeppole/img/sl_breadrow3.jpg')"></div>
+                <p class="card-title myCardTitle">Apple Street Café</p>
+                <p class="card-text myCardText hide">Mon-Sat 6am-6pm<br/>Sun 8-4pm</p>
             </div>
-            <div class="card bg-dark text-white"
-                style="text-align:center; color:black; font-weight:bold;font-size:24px;letter-spacing:3px;">
-                <img src="../img/bg_bread1.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <p style="line-height: 180px;" class="card-title">Downtown Boise</p>
+            <div class="card text-white myCard">
+                <div class="card-img-overlay cardBackgroundImage" style="background-image:url('../zeppole/img/bg_cafe1.jpg')">
                 </div>
+                <p class="card-title myCardTitle">Downtown Café</p>
+                <p class="card-text myCardText hide">Mon-Sat 8am-3pm<br/>Sun Closed</p>
             </div>
-            <div class="card bg-dark text-white"
-                style="text-align:center; color:black; font-weight:bold;font-size:24px;letter-spacing:3px;">
-                <img src="../img/bg_bread1.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <p style="line-height: 180px;" class="card-title">Partner Locations</p>
-                </div>
+            <div class="card text-white myCard">
+                <div class="card-img-overlay cardBackgroundImage"
+                    style="background-image:url('../zeppole/img/bg_partners.jpg')"></div>
+                <p class="card-title myCardTitle">Partner Locations</p>
+                <p class="card-text myCardText partnersText hide" >
+                    Dawson Taylor – Downtown<br/>
+                    The District Coffee House<br/>
+                    Groove Coffee<br/>
+                    Barbacoa<br/>
+                    Fork Restaurant<br/>
+                    The Stuffed Olive<br/>
+                    Treasure Valley Roastere<br/>
+                    Thomas Hammer Coffee<br/>
+                    And Many More!<br/>
+                </p>
             </div>
         </div>
-        <footer class="footer mt-auto py-3" style="background-color:white;">
-            <div class="container">
-                <span class="text-muted">Place sticky footer content here.</span>
-            </div>
-        </footer>
-</body>
-
-<script>
-    window.onload = function () {
-        document.getElementById('close').onclick = function () {
-            this.parentNode.parentNode.removeChild(this.parentNode);
-            return false;
-        };
-    }
-    $(document).ready(function () {
-        $("#announcement").delay(2000).fadeIn(500);
-        var message;
-        // get soup of the day
-        switch (new Date().getDay()) {
-            case 0:
-                message = "Todays soup of the day is and Vegetarian Tomato Basil with Ravioli!";
-                break;
-            case 1:
-                message =
-                    "Todays soup of the day is Chicken with Wild Rice and Vegetarian Tomato Basil with Ravioli!";
-                break;
-            case 2:
-                message =
-                    "Todays soup of the day is Baked Potato & Bacon Chowder and Vegetarian Tomato Basil with Ravioli!";
-                break;
-            case 3:
-                message = "Todays soup of the day is Tortilla and Vegetarian Tomato Basil with Ravioli!";
-                break;
-            case 4:
-                message =
-                    "Todays soup of the day is Vegetarian Cheddar Vegetable and Vegetarian Tomato Basil with Ravioli!";
-                break;
-            case 5:
-                message = "Todays soup of the day is Clam Chowder and Vegetarian Tomato Basil with Ravioli!";
-                break;
-            case 6:
-                message = "Todays soup of the day is Minestrone and Vegetarian Tomato Basil with Ravioli!";
-        }
+    </div>
+    <div class="awards">
+        <h2 class="ribbon">
+            <strong class="ribbon-content">Some Of Our Acheivements</strong>
+        </h2>
+        <div class="award-images">
+            <a href="http://www.idahopreferred.com/" target="_blank"><img src="../zeppole/img/idaho_prefered.gif"
+                    alt="Idaho Preferred Logo" title="Idaho Preferred Logo" width="127" height="89"></a>
+            <a href="https://www.idahostatesman.com/living/living-here-guide/best-of-treasure-valley/article157788874.html#navlink=SecList"
+                target="_blank"><img src="../zeppole/img/TreasureValleyAward.jpg" alt="Idaho Preferred Logo"
+                    title="Best of Treasure Valley 2017" width="127" height="89"></a>
+            <a href="https://www.boiseweekly.com/boise/here-it-is-best-of-boise-2018/BestOf?oid=11529182"
+                target="_blank"><img src="../zeppole/img/bestofboise2018.jpg" alt="Idaho Preferred Logo"
+                    title="Idaho Preferred Logo" width="127" height="89"></a>
+        </div>
+        <hr>
+        <div class="container award-info">
+            <p class="paragraph">Boise Weekly's "Best of Boise" Reader's Poll - 2010, 2011, 2013, 2014, 2015, 2016,
+                2017, 2018</p>
+            <p class="paragraph">Best Bakery - Idaho Statesman's "Best of the Treasure Valley" 2011, 2013 & 2017</p>
+            <p class="paragraph">Small Business of the Year - Boise Metro Chamber of Commerce - 2010</p>
+        </div>
 
 
-        $('#message').text(message);
-
-    });
-
-    $('.carousel').carousel({
-        interval: 2000
-    })
-</script>
-
+    </div>
+    <footer class="footer mt-auto py-3 bg_triangle">
+        <div class="footer-content ">
+            <ul class="footer-socialmedia footer-item">
+                <li class="facebook">
+                    <a href="#" target="blank">
+                        <i class="fab fa-facebook icon" aria-hidden="true" style="pointer-events: none;"></i>
+                    </a>
+                </li>
+                <li class="email">
+                    <a href="#" target="blank">
+                        <i class="far fa-envelope icon" aria-hidden="true" style="pointer-events: none;"></i>
+                    </a>
+                </li>
+                <li class="phone">
+                    <a href="#" target="blank">
+                        <i class="fas fa-phone icon" aria-hidden="true" style="pointer-events: none;"></i>
+                    </a>
+                </li>
+            </ul>
+            <span class="footer-item hideWhenOnMobile">This is a mock website made by Eric Marsh. I am not affiliated with Zeppole.</span>
+        </div>
+    </footer>
+</body>  
 </html>
